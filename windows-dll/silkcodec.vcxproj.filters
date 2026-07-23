@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="wrapper">
+      <UniqueIdentifier>{A0B1C2D3-1111-4000-8000-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="silk">
+      <UniqueIdentifier>{A0B1C2D3-1111-4000-8000-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="silk\src">
+      <UniqueIdentifier>{A0B1C2D3-1111-4000-8000-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="silk\interface">
+      <UniqueIdentifier>{A0B1C2D3-1111-4000-8000-000000000004}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="silk_dll.c">
+      <Filter>wrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_A2NLSF.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_CNG.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_HP_variable_cutoff_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LBRR_reset.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LPC_inv_pred_gain.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LPC_synthesis_filter.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LPC_synthesis_order16.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LP_variable_cutoff.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LSF_cos_table.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LTP_analysis_filter_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_LTP_scale_ctrl_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_MA.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF2A.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF2A_stable.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF_MSVQ_decode.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF_MSVQ_encode_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF_VQ_rate_distortion_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF_VQ_sum_error_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF_VQ_weights_laroia.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NLSF_stabilize.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NSQ.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_NSQ_del_dec.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_PLC.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_VAD.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_VQ_nearest_neighbor_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_ana_filt_bank_1.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_apply_sine_window.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_array_maxabs.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_autocorr.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_biquad.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_biquad_alt.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_burg_modified.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_bwexpander.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_bwexpander_32.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_code_signs.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_control_audio_bandwidth.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_control_codec_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_corrMatrix_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_create_init_destroy.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_dec_API.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_decode_core.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_decode_frame.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_decode_parameters.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_decode_pitch.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_decode_pulses.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_decoder_set_fs.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_detect_SWB_input.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_div_oabi.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_enc_API.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_encode_frame_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_encode_parameters.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_encode_pulses.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_find_LPC_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_find_LTP_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_find_pitch_lags_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_find_pred_coefs_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_gain_quant.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_init_encoder_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_inner_prod_aligned.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_interpolate.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_k2a.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_k2a_Q16.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_lin2log.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_log2lin.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_noise_shape_analysis_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_pitch_analysis_core.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_pitch_est_tables.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_prefilter_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_process_NLSFs_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_process_gains_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_quant_LTP_gains_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_range_coder.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_regularize_correlations_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_down2.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_down2_3.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_down3.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_AR2.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_ARMA4.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_IIR_FIR.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_copy.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_down4.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_down_FIR.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_up2_HQ.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_private_up4.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_rom.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_resampler_up2.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_residual_energy16_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_residual_energy_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_scale_copy_vector16.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_scale_vector.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_schur.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_schur64.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_shell_coder.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_sigm_Q15.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_solve_LS_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_sort.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_sum_sqr_shift.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_LTP.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_NLSF_CB0_10.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_NLSF_CB0_16.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_NLSF_CB1_10.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_NLSF_CB1_16.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_gain.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_other.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_pitch_lag.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_pulses_per_block.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_sign.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_tables_type_offset.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\silk\src\SKP_Silk_warped_autocorrelation_FIX.c">
+      <Filter>silk\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="silk_dll.h">
+      <Filter>wrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\interface\SKP_Silk_SDK_API.h">
+      <Filter>silk\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\interface\SKP_Silk_control.h">
+      <Filter>silk\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\interface\SKP_Silk_errors.h">
+      <Filter>silk\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\interface\SKP_Silk_typedef.h">
+      <Filter>silk\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_AsmHelper.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_AsmPreproc.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_Inlines.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_PLC.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_SigProc_FIX.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_common_pitch_est_defines.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_define.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_macros.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_macros_arm.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_main.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_main_FIX.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_pitch_est_defines.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_resampler_private.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_resampler_rom.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_resampler_structs.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_setup_complexity.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_structs.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_structs_FIX.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_tables.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_tables_NLSF_CB0_10.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_tables_NLSF_CB0_16.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_tables_NLSF_CB1_10.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_tables_NLSF_CB1_16.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\silk\src\SKP_Silk_tuning_parameters.h">
+      <Filter>silk\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="silk_dll.def">
+      <Filter>wrapper</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="silk_dll.rc">
+      <Filter>wrapper</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

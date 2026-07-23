@@ -13,18 +13,36 @@
 
 ```
 windows-dll
-  ├── silk_dll.h        导出 API 头文件（中文注释，含完整参数说明）
-  ├── silk_dll.c        实现（解码/编码主循环移植自 silk/test 下的测试程序）
-  ├── silk_dll.def      模块定义文件（追加导出底层 SKP_Silk_SDK_* 原生函数）
-  ├── silk_dll.rc       DLL 版本资源
-  ├── build.ps1         一键构建脚本（MSVC，自动定位最新 Visual Studio）
-  ├── CMakeLists.txt    CMake 构建（可选，供跨环境使用）
-  └── test/test_dll.c   端到端自测程序（LoadLibrary 动态加载验证）
+  ├── silk_dll.h              导出 API 头文件（中文注释，含完整参数说明）
+  ├── silk_dll.c              实现（解码/编码主循环移植自 silk/test 下的测试程序）
+  ├── silk_dll.def            模块定义文件（追加导出底层 SKP_Silk_SDK_* 原生函数）
+  ├── silk_dll.rc             DLL 版本资源
+  ├── silkcodec.sln           Visual Studio 2026 解决方案（工具集 v145）
+  ├── silkcodec.vcxproj       动态库工程（含 .filters 分组）
+  ├── test_dll.vcxproj        自测程序工程
+  ├── build.ps1               一键构建脚本（MSVC，自动定位最新 Visual Studio）
+  ├── CMakeLists.txt          CMake 构建（可选，供跨环境使用）
+  └── test/test_dll.c         端到端自测程序（LoadLibrary 动态加载验证）
 ```
 
 ## 构建
 
-要求：安装带 C++ 工作负载的 Visual Studio（或 Build Tools）。
+要求：安装带 C++ 工作负载的 Visual Studio（或 Build Tools）。以下三种方式任选其一。
+
+### 方式一：Visual Studio 2026 解决方案
+
+直接用 VS2026 打开 `silkcodec.sln`（平台工具集 v145，Debug/Release × Win32/x64
+四配置），或命令行 MSBuild：
+
+```powershell
+MSBuild.exe silkcodec.sln /m /p:Configuration=Release /p:Platform=x64    # 64 位
+MSBuild.exe silkcodec.sln /m /p:Configuration=Release /p:Platform=Win32  # 32 位
+```
+
+产物在 `build\vs\<Platform>\<Configuration>\` 下。`test_dll` 工程已配好调试
+工作目录，选中后直接 F5 即可运行自测。
+
+### 方式二：一键构建脚本
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1            # x64 + x86
@@ -37,9 +55,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Arch x64  # 仅
 - `silkcodec.lib` —— 导入库（静态链接调用时使用）
 - `test_dll.exe` —— 自测程序，构建脚本默认会自动运行
 
-也可用 CMake（要求 CMake 版本支持本机安装的 Visual Studio 生成器，
-VS 自带的 cmake.exe 一定满足；若独立安装的旧版 CMake 默认生成器指向
-已卸载的 VS 而配置失败，用 `-G` 显式指定，如 `-G "Visual Studio 18 2026"`）：
+### 方式三：CMake
+
+要求 CMake 版本支持本机安装的 Visual Studio 生成器（VS 自带的 cmake.exe
+一定满足；若独立安装的旧版 CMake 默认生成器指向已卸载的 VS 而配置失败，
+用 `-G` 显式指定，如 `-G "Visual Studio 18 2026"`）：
 
 ```powershell
 cmake -S . -B build-cmake -A x64

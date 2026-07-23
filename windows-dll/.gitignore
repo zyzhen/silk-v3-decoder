@@ -2,6 +2,10 @@
 build/
 build-cmake/
 
+# Visual Studio 工作区状态与用户级设置
+.vs/
+*.vcxproj.user
+
 # 编译中间产物
 *.obj
 *.res
