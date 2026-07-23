@@ -1,0 +1,19 @@
+; silk_dll.def —— silkcodec.dll 模块定义文件
+;
+; 高层封装 API（silk_*）已在 silk_dll.c 中用 __declspec(dllexport) 导出，
+; 此处只负责把底层 Skype SILK SDK 的原生函数按原名一并导出，
+; 从而避免修改 silk/interface/SKP_Silk_SDK_API.h 原始头文件。
+
+LIBRARY silkcodec
+EXPORTS
+    ; ---- Skype SILK SDK 原生 API（声明见 silk/interface/SKP_Silk_SDK_API.h）----
+    SKP_Silk_SDK_Get_Encoder_Size
+    SKP_Silk_SDK_InitEncoder
+    SKP_Silk_SDK_QueryEncoder
+    SKP_Silk_SDK_Encode
+    SKP_Silk_SDK_Get_Decoder_Size
+    SKP_Silk_SDK_InitDecoder
+    SKP_Silk_SDK_Decode
+    SKP_Silk_SDK_search_for_LBRR
+    SKP_Silk_SDK_get_TOC
+    SKP_Silk_SDK_get_version

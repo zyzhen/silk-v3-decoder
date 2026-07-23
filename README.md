@@ -11,6 +11,8 @@ silk-v3-decoder            (Decode Silk V3 Audio Files)
   |
   |---  windows            (For Windows Platform Users Program)
   |
+  |---  windows-dll        (Windows Dynamic Library: silkcodec.dll)
+  |
   |---  LICENSE            (License)
   |
   |---  README.md          (Readme)
@@ -44,6 +46,13 @@ Notice: the `input` folder is content the audio files you need to convert, the `
 
 If you need to convert files on the `Windows` platfrom, [click here](https://dl.kn007.net/directlink/silk2mp3.zip "silk2mp3.zip") to download zip package for `silk2mp3.exe` to convert, also can <a href='/windows' target="_blank">click here</a> to get more information.
 
+## Windows DLL
+
+The SILK v3 codec core is also wrapped as a Windows dynamic library `silkcodec.dll`
+(SILK <-> PCM in memory or by file, wechat/qq `0x02` header auto-detected), which can be
+called directly from C/C++, C#, Python, etc. See [windows-dll/README.md](windows-dll/README.md)
+for build steps, full API reference and usage examples.
+
 ## Other
 
 Also provide silk v3 encode codec, compatible with Wechat/QQ.
@@ -66,6 +75,8 @@ silk-v3-decoder            (解码silk v3音频文件)
   |---  silk               (Skype Silk源码)
   |
   |---  windows            (可用于Windows平台的应用程序)
+  |
+  |---  windows-dll        (Windows动态库：silkcodec.dll)
   |
   |---  LICENSE            (软件使用范围许可)
   |
@@ -99,6 +110,13 @@ sh converter.sh input ouput mp3
 注意：其中`input`是要转换的目录，而`output`是最终转换后音频输出的目录，最后的`mp3`参数是最终转换后输出的格式。
 
 如果你需要在`Windows`下使用该程序，请下载[silk2mp3.exe](https://dl.kn007.net/directlink/silk2mp3.zip "silk2mp3.zip")应用程序来完成转换，你可<a href='/windows' target="_blank">点击这里</a>来查看更多Windows下如何使用的相关说明。
+
+## Windows 动态库
+
+SILK v3 编解码核心已另行封装为 Windows 动态库 `silkcodec.dll`（内存级/文件级
+SILK <-> PCM 互转，自动识别微信/QQ 的 `0x02` 前缀头），可被 C/C++、C#、Python
+等语言直接调用。构建步骤、完整 API 说明与调用示例见
+[windows-dll/README.md](windows-dll/README.md)。
 
 ## 其他说明
 

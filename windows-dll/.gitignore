@@ -1,0 +1,14 @@
+# 构建输出目录
+build/
+build-cmake/
+
+# 编译中间产物
+*.obj
+*.res
+*.exp
+*.pdb
+*.ilk
+
+# 测试临时文件
+test_out.silk
+test_out.pcm
