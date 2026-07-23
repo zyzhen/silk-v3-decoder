@@ -37,11 +37,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Arch x64  # 仅
 - `silkcodec.lib` —— 导入库（静态链接调用时使用）
 - `test_dll.exe` —— 自测程序，构建脚本默认会自动运行
 
-也可用 CMake：
+也可用 CMake（要求 CMake 版本支持本机安装的 Visual Studio 生成器，
+VS 自带的 cmake.exe 一定满足；若独立安装的旧版 CMake 默认生成器指向
+已卸载的 VS 而配置失败，用 `-G` 显式指定，如 `-G "Visual Studio 18 2026"`）：
 
 ```powershell
 cmake -S . -B build-cmake -A x64
 cmake --build build-cmake --config Release
+# 产物在 build-cmake\Release\ 下
 ```
 
 ## 导出 API 一览
